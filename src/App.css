@@ -1,0 +1,41 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+
+.container {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  align-content: center;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 100px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+}
+
+p  {
+  background-color: red;
+  border: 2px solid black;
+  width: 300px;
+  height: 300px;
+  margin: 20px;
+}
+
+.formBox {
+  background-color: #ddd;
+  /* width: 30%; */
+  padding: 10px;
+  margin: 20px;
+  text-align: left;
+}

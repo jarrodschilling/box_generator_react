@@ -1,10 +1,36 @@
+/* #root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+} */
+
 #root {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  /* align-items: center; */
 }
 
+.formBox {
+  background-color: #ddd;
+  /* width: 30%; */
+  padding: 10px;
+  margin: 20px;
+  text-align: left;
+}
+
+.app {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+input {
+  width: 98%;
+}
 
 .container {
   display: flex;
@@ -15,7 +41,6 @@
 
 h1 {
   text-align: center;
-  margin-top: 100px;
 }
 
 .row {
@@ -24,18 +49,19 @@ h1 {
   justify-content: start;
 }
 
-p  {
-  background-color: red;
-  border: 2px solid black;
-  width: 300px;
-  height: 300px;
-  margin: 20px;
+button {
+  padding: 10px 25px;
 }
 
-.formBox {
-  background-color: #ddd;
-  /* width: 30%; */
-  padding: 10px;
-  margin: 20px;
-  text-align: left;
+.jsBoxes {
+  display: flex;
+  flex-direction: row;
+}
+
+p {
+  margin: 10px;
+}
+
+form {
+  margin-bottom: 20px;
 }

@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import BoxForm from './components/BoxForm'
 import Boxes from './components/Boxes'
+import TestBox from './components/TestBox'
 import './App.css'
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
     <h1>Box Generator Master</h1>
       <BoxForm stateUpdater={stateUpdater}/>
       <Boxes currentBoxes={currentBoxes} setCurrentBoxes={setCurrentBoxes} />
+      {/* <TestBox /> */}
     </div>
   )
 }

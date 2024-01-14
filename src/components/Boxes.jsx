@@ -1,10 +1,13 @@
 
 const Boxes = (props) => {
     const {currentBoxes} = props
-    // const {setCurrentBoxes} = props
-    // const removeBox = value => {
-    //     currentBoxes.filter()
-    // }
+    const {setCurrentBoxes} = props
+
+    const removeBox = (deleteBox) => {
+        const newBoxes = currentBoxes.filter((box) => box !== deleteBox)
+        setCurrentBoxes(newBoxes)
+    }
+
 
     return (
         <div className="jsBoxes">
@@ -12,7 +15,7 @@ const Boxes = (props) => {
                 currentBoxes.map((box, index) => (
                     <div key={index}>
                         <p style={{background:box.boxColor, width:box.boxWidth, height:box.boxHeight}}>
-                            {/* <button onClick={() => removeBox(index)}>X</button> */}
+                            <button onClick={() => removeBox(box)}>X</button>
                         </p>
                     </div>
                 ))
